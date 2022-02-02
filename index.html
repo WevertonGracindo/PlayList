@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="head">
+            <div id="namesong">I DON'T CARE</div>
+            <div id="namesinger">ED SHEERAN & JUSTIN BIEBER</div>
+        </div>
+        <div id="middle">
+            <div id="poster"><img id="images" src="./img/edSheeran.jpg">
+                <div id="itens">
+                    <input type="range" name="range" id="range">
+                    <div id="loading">
+
+                        <span id="atualTime"></span>
+                        <span id="songTime">03:42</span>
+                        <audio id="songs" autoplay>
+                            <source src="./ogg/edSheeran.ogg" type="audio/ogg">
+                            <source src="mp3/edSheeran.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+                    <div id="buttons">
+
+                        <div onclick="back()" class="backforward" id="back">
+                            <img width="60px" height="60px" src="./img/fast-back-button-pngrepo-com.png">
+                        </div>
+                        <div onclick="pause()" class="backforward" id="play">
+                            <img width="60px" height="60px" id="lastbutton" src="./img/pause-button-pngrepo-com.png">
+                        </div>
+                        <div onclick="forward()" class="backforward" id="forward">
+                            <img width="60px" height="60px" src="./img/fast-forward-button-pngrepo-com.png">
+                        </div>
+
+
+
+                    </div>
+                    <div id="footer">
+                        <br> <img onclick="mute()"  id="icon" src="./img/volume-pngrepo-com.png"> <input id="volume" type="range" />
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <script src="index.js"></script>
+
+</body>
+
+</html>
